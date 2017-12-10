@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Cat avatar generator</title>
+<title>Steem Avatar Generator - Plankton</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="Content-Language" content="en-ca" />
 <link rel="Shortcut Icon" href="favicon.png" type="image/x-icon" />
@@ -68,7 +68,7 @@ if ($seed == 'fuck' OR $seed == 'shit' OR $seed == 'ass') {
 
 <div id="wrapper">
     
-  <h1>Cat avatar generator</h1>
+  <h1>Steem Avatar Generator</br> Plankton</h1>
   
   <img class="avatar" src="avatar.php?seed=<?php echo "$seed"; ?>" title="to download the picture, right click and SAVE AS *.PNG picture" >
 
@@ -100,7 +100,7 @@ if ($seed == 'fuck' OR $seed == 'shit' OR $seed == 'ass') {
     <br/>
     Your name?*<br/>
     <input class="smallbutton" type="text" name="seed" id="name" value="" autofocus />
-    <input class="bigbutton" type="submit" value="Generate new cat" />
+    <input class="bigbutton" type="submit" value="Generate new plankton" />
   </form>
   
   <br/>
