@@ -6,23 +6,12 @@
 <meta http-equiv="Content-Language" content="en-ca" />
 <link rel="Shortcut Icon" href="favicon.png" type="image/x-icon" />
 
-<style type="text/css" media="screen">
-body { margin: 2em; padding: 0; background: #000; color: #666; font-size: .8rem; text-align: center; }
-#wrapper { text-align: left; background: #fff; max-width: 300px; padding: 1rem;    margin: 0 auto; border: 1em #333 solid; text-align: center; }
-h1 { font-variant: small-caps; color: hotpink; font-size: 1.8rem; font-family: Ubuntu, Arial, sans; font-weight: bold; margin: 0 0 0.3rem 0; }
-.avatar { border: 0; margin: 2rem 0 0 0; }
-a { color: #00aad4;}
-a:hover {    color: #222;}
-.smallbutton { font-size: 1rem; margin-bottom: 0.8rem; }
-input[type=text]{width:90%}
-.bigbutton { font-weight: bold; font-size: 1.3rem; margin-bottom: 1.3rem; }
-@media (max-width: 500px) {
-body { margin: 0; padding: 0; background: #FFF; font-size: 1rem; }
-#wrapper { text-align: left; background: #fff; max-width: 100%; padding: 0; margin: 0 auto; border: none; text-align: center; }
-h1 { font-size: 1.6rem; margin: 0.2rem 0 0.2rem 0; }
-}
-</style>
+<!-- Latest compiled and minified CSS -->
+<link href="bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" >
+<!-- Latest compiled and minified JavaScript -->
+<script src="bootstrap-3.3.6-dist/js/bootstrap.min.js" ></script>
 
+<link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
   
@@ -43,72 +32,46 @@ $seed = substr($seed,0,35).'';
 if ($seed == '') {
     $seed = uniqid();
 }
-# Easter egg
-if ($seed == 'carrot' OR $seed == 'Carrot') {
-    # waltzo is the seed to show Carrot
-    $seed = 'waltzo';
-}
-if ($seed == 'rhel' OR $seed == 'Redhat' OR $seed == 'RHEL' OR $seed == 'redhat') {
-    # waltzo is the seed to show Carrot
-    $seed = '16';
-}
-if ($seed == 'cute' OR $seed == 'cutie' OR $seed == 'qt' OR $seed == 'Qt') {
-    # waltzo is the seed to show Carrot
-    $seed = '583df35cdfe3c';
-}
-if ($seed == 'metal' OR $seed == 'tatoo' OR $seed == 'rock' OR $seed == 'biker') {
-    # waltzo is the seed to show Carrot
-    $seed = '583df4b9ac346';
-}
-if ($seed == 'fuck' OR $seed == 'shit' OR $seed == 'ass') {
-    # waltzo is the seed to show Carrot
-    $seed = 'pop';
-}
+
 ?>
+<section class="top">
+<div class="container">
+<h1>STEEM AVATAR GENERATOR</h1>
+</div>
+</section><!--/top-->
 
-<div id="wrapper">
-    
-  <h1>Steem Avatar Generator</br> Plankton</h1>
-  
+<section class="content">
+<div id="wrapper" class="container">
+
+<div class="plankton">  
   <img class="avatar" src="avatar.php?seed=<?php echo "$seed"; ?>" title="to download the picture, right click and SAVE AS *.PNG picture" >
+</div><!--/plankton-->
 
-  <?php 
-  # workaround to display secret easter egg. 
-  if ($seed == 'waltzo') {
-    echo '<br/>Bravo, easter egg #1! <br/> <strong>~ Carrot ~</strong> <br/> <em>(from <a href="http://www.peppercarrot.com/">Pepper&amp;Carrot</a>)</em>';
   
-  } elseif ($seed == '16') {
-    echo '<br/>Bravo, easter egg #2! <br/> <strong>~ Red Hat Linux ~</strong>';
-  
-  } elseif ($seed == '583df35cdfe3c') {
-    echo '<br/>Bravo, easter egg #3! <br/> <strong>~ Cute cat ~</strong>';
-  
-  } elseif ($seed == '583df4b9ac346') {
-    echo '<br/>Bravo, easter egg #4! <br/> <strong>~ Rock\'n\'roll !!! ~</strong>';
-  
-  } elseif ($seed == 'pop') {
-    echo '<br/><strong>OH! mind your words!</strong>';
-  
-  } else {
-    #display the seed as name
-    echo '<br/><strong>~ '.$seed.' ~</strong>';
-  }
-  ?>
-  
+  <div class="form">
+ <H2>PLANKTON</H2>
   <form>
-    <br/>
-    <br/>
-    Your name?*<br/>
-    <input class="smallbutton" type="text" name="seed" id="name" value="" autofocus />
-    <input class="bigbutton" type="submit" value="Generate new plankton" />
+    
+    <input class="smallbutton" type="text" name="seed" id="name" value="" autofocus placeholder="NAME*" />
+    <input class="bigbutton" type="submit" value="Generate" />
   </form>
   
   <br/>
   <em>(* empty=random)</em><br/><br/>
-  Artworks: CC-By David Revoy <a href="http://www.peppercarrot.com" title="my webcomic">[site]</a><br/>
-  Code: CC-By Andreas Gohr <a href="https://www.splitbrain.org/blog/2007-01/20_monsterid_as_gravatar_fallback" title="original author">[site]</a><br/><br/>
-  <a href="2016_cat-generator.zip" title="original author">[Zip sources and artwork]</a>
-
+</div><!--/form-->
+ 
+<div class="info">
+<h3>Contributors</h3>
+<a href="http://www.steemit.com/@fabiyamada" target="_blank">@fabiyamada</a>
 </div>
+
+</div><!-- container-->
+</section><!-- /content-->
+<section class="bottom">  
+<div class="container">
+Current Artworks: <a href="http://www.peppercarrot.com" title="my webcomic">CC-By David Revoy</a> <br/>
+  Based on code: <a href="https://www.splitbrain.org/blog/2007-01/20_monsterid_as_gravatar_fallback" title="original author">CC-By Andreas Gohr </a>
+  </section><!--/bottom-->
+  </div><!--/container-->
 </body>
 </html>
