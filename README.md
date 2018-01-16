@@ -18,5 +18,5 @@ Please check contribute.md for further info on this.
 09/12/17
 Started the project with the original files at: http://wearecodex.com/steem-avatars/plankton/
 
-16/01/17
+16/01/18
 Changed the repository name to fit the new idea of having all the STEEM user level in the same page.
