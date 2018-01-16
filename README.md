@@ -11,6 +11,9 @@ If you want to use this project for learning or to make your own project, just f
 ## Testing
 Just open the index.php file.
 
+## Contributing
+Please check contribute.md for further info on this.
+
 ## MAIN CHANGES HISTORY
 09/12/17
 Started the project with the original files at: http://wearecodex.com/steem-avatars/plankton/
