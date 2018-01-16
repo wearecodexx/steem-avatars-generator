@@ -31,23 +31,25 @@ background: linear-gradient(to bottom, #28ffd4 0%,#acdafe 100%); /* W3C, IE10+, 
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#28ffd4', endColorstr='#acdafe',GradientType=0 ); /* IE6-9 */
 }
 
-.plankton{
-border-radius:50%;
+.avatar-container{
+border-radius:10px;
 overflow:hidden;
 max-width:256px;
-height:256px;	
+height:256px;
 float:left;
+margin-bottom:10px;
 }
 .avatar { border: 0; margin:0; }
-.form, .info{
+.form{
 	float:left;
-	border-radius:50%;
+	border-radius:10% 50% 50% 50%;
 	border:#fff 1px dashed;
 	height:256px; width:256px;
 	padding:10px;
 	text-align:center;
-	margin:0 10px;
-	
+	margin:0 10px 0 10px;
+	background: rgba(255, 255, 255, .5)
+
 }
 .form input[type=text]{width:90%; background:#f4f4f4; border:#fff 1px solid; margin-bottom:10px; padding:5px;}
 .form h2{
@@ -63,9 +65,16 @@ float:left;
 	padding:5px;
 }
 
+.info{
+	background:#f2f2f2;
+	padding:20px;
+	color:#717171;
+	text-align: left;
+}
+.info h3{color:#333; }
 .bottom{
 	color:#5d5d5d;
 	text-transform:uppercase;
 	text-align:left;
-	padding:10px 0 10px 0;	
+	padding:10px 0 10px 0;
 }
