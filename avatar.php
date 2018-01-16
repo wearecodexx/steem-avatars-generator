@@ -8,11 +8,12 @@ function build_monster($seed='',$size=''){
 
     // throw the dice for body parts
     $parts = array(
-        'body' => rand(1,15),
-        'fur' => rand(1,10),
-        'eyes' => rand(1,15),
-        'mouth' => rand(1,10),
-        'accessorie' => rand(1,20)
+        'body' => rand(1,2),
+        'hands' => rand(1,2),
+        'eyes' => rand(1,2),
+        'mouth' => rand(1,2),
+        'accessorie' => rand(1,2),
+        'tentacles' => rand(1,2)
     );
 
     // create backgound
