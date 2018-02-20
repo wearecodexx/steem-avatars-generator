@@ -1,0 +1,1 @@
+Minnow avatar parts folder.
