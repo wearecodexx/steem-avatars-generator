@@ -84,7 +84,7 @@ if ($seed == '') {
 
 <div class="col-md-6 col-xs-12">
 <div class="avatar-container">
-  <img class="avatar" src="avatar.php?seed=<?php echo "$seed"; ?>" title="to download the picture, right click and SAVE AS *.PNG picture" >
+  <img class="avatar" src="avatar-dolphin.php?seed=<?php echo "$seed"; ?>" title="to download the picture, right click and SAVE AS *.PNG picture" >
 </div><!--/plankton-->
 
 
@@ -103,7 +103,7 @@ if ($seed == '') {
 
 <div class="col-md-6 col-xs-12">
 <div class="avatar-container">
-  <img class="avatar" src="avatar.php?seed=<?php echo "$seed"; ?>" title="to download the picture, right click and SAVE AS *.PNG picture" >
+  <img class="avatar" src="avatar-orca.php?seed=<?php echo "$seed"; ?>" title="to download the picture, right click and SAVE AS *.PNG picture" >
 </div><!--/plankton-->
 
 
